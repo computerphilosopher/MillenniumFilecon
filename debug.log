@@ -1213,3 +1213,34 @@ Watching dir C:\Users\bhs32\Desktop\skynet\MillenniumFilecon\upload\locale with 
             ORDER BY name; args=None
 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
 "GET /upload/ HTTP/1.1" 200 350
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\범수자료\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\범수자료\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /upload HTTP/1.1" 301 0
+"GET /upload/ HTTP/1.1" 200 350
+(0.016) INSERT INTO "upload_uploadfilemodel" ("title", "file") VALUES ('', ''); args=['', '']
+"POST /upload/ HTTP/1.1" 200 350
+(0.011) INSERT INTO "upload_uploadfilemodel" ("title", "file") VALUES ('', '1_1_7_.PNG'); args=['', '1_1_7_.PNG']
+"POST /upload/ HTTP/1.1" 200 350
+(0.013) INSERT INTO "upload_uploadfilemodel" ("title", "file") VALUES ('', '1_1_7__2P7u9xw.PNG'); args=['', '1_1_7__2P7u9xw.PNG']
+"POST /upload/ HTTP/1.1" 200 350
+File C:\Users\user\Desktop\범수자료\MillenniumFilecon\upload\views.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\범수자료\MillenniumFilecon\upload\views.py previous mtime: None, current mtime: 1554307427.8852763
+C:\Users\user\Desktop\범수자료\MillenniumFilecon\upload\views.py notified as changed. Signal results: [(<function translation_file_changed at 0x03E46978>, None)].
+C:\Users\user\Desktop\범수자료\MillenniumFilecon\upload\views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
