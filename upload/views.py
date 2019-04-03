@@ -6,6 +6,7 @@ from django.conf import settings
 from upload.models import UploadFileModel
 from upload.forms import UploadFileForm
 import moviepy.editor as mp
+import ffmpy
 
 # Create your views here.
     
@@ -18,13 +19,18 @@ def convert(instance):
 
     root = settings.MEDIA_ROOT 
     
-    file_url = root + instance.file.url.split('/')[-1]
+    
+    file_url = root + '/upload/origin/' + instance.file.url.split('/')[-1]
+    file_url = file_url.replace('\\', '/')
+    
+    video_name = file_url[:-4]
+
     clip = mp.VideoFileClip(file_url)
 
-    video_name = (file_url.split('/')[-1]).split('.')[0]
-    clip.write_videofile(video_name)
+    clip.write_videofile(video_name +".mp4", fps = 15)
 
     instance.converted = video_name
+
 
 
 def upload_file(request):
