@@ -7,6 +7,8 @@
 *.pot
 *.pyc
 __pycache__/
+*.jpg
+*.mp4
 local_settings.py
 db.sqlite3
 media
