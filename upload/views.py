@@ -30,7 +30,9 @@ def convert(instance):
 
     instance.converted = video_path
     instance.converted_url = settings.MEDIA_URL 
-    print(instance.converted_url)
+
+    video_name = video_path.split('/')[-1]
+    return settings.MEDIA_URL + "upload/converted/" + video_name
 
 
 
@@ -41,8 +43,8 @@ def upload_file(request):
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             instance = form.save()
-            #return convert(instance)
-            return redirect(instance.converted_url)
+            uri = convert(instance)
+            return redirect(uri)
     else:
         form = UploadFileForm()
     return render(request, 'upload_page.html', {'form': form})
