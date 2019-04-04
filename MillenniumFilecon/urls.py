@@ -23,5 +23,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', include('upload.urls')),
-    path('download/', views.download_video),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

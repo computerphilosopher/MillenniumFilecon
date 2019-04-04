@@ -4162,3 +4162,484 @@ Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with g
 (0.008) INSERT INTO "upload_uploadfilemodel" ("title", "file", "converted") VALUES ('', 'upload/origin/giphy.gif', ''); args=['', 'upload/origin/giphy.gif', '']
 "POST /upload/ HTTP/1.1" 302 0
 "GET /upload/download/ HTTP/1.1" 200 0
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'upload' AND "django_content_type"."model" = 'uploadfilemodel'); args=('upload', 'uploadfilemodel')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /upload/ HTTP/1.1" 200 367
+(0.013) INSERT INTO "upload_uploadfilemodel" ("title", "file", "converted") VALUES ('', 'upload/origin/giphy_WAT5Riu.gif', ''); args=['', 'upload/origin/giphy_WAT5Riu.gif', '']
+"POST /upload/ HTTP/1.1" 302 0
+"GET /upload/download/ HTTP/1.1" 200 0
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py previous mtime: None, current mtime: 1554318096.683756
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py notified as changed. Signal results: [(<function translation_file_changed at 0x04946A50>, None)].
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py previous mtime: None, current mtime: 1554318109.0805776
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py notified as changed. Signal results: [(<function translation_file_changed at 0x03B37A50>, None)].
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'upload' AND "django_content_type"."model" = 'uploadfilemodel'); args=('upload', 'uploadfilemodel')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /upload/ HTTP/1.1" 200 367
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'upload.urls' from 'C:\\Users\\user\\Desktop\\skynet\\MillenniumFilecon\\upload\\urls.py'> (upload:upload) 'upload/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'upload.urls' from 'C:\\Users\\user\\Desktop\\skynet\\MillenniumFilecon\\upload\\urls.py'> (upload:upload) 'upload/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'upload.urls' from 'C:\\Users\\user\\Desktop\\skynet\\MillenniumFilecon\\upload\\urls.py'> (upload:upload) 'upload/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2216
+"GET /media HTTP/1.1" 301 0
+Not Found: /media/
+"GET /media/ HTTP/1.1" 404 1733
+Not Found: /media/upload
+"GET /media/upload HTTP/1.1" 404 1745
+Not Found: /media/upload/origin
+"GET /media/upload/origin HTTP/1.1" 404 1759
+"GET /media/upload/origin/default_image.jpg HTTP/1.1" 200 259912
+"GET /upload/ HTTP/1.1" 200 367
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'upload' AND "django_content_type"."model" = 'uploadfilemodel'); args=('upload', 'uploadfilemodel')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.007) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.012) INSERT INTO "upload_uploadfilemodel" ("title", "file", "converted") VALUES ('', 'upload/origin/giphy_OVrx3yj.gif', ''); args=['', 'upload/origin/giphy_OVrx3yj.gif', '']
+Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'C:/Users/user/Desktop/skynet/MillenniumFilecon/media/upload/converted/giphy_OVrx3yj' not found. 'C:/Users/user/Desktop/skynet/MillenniumFilecon/media/upload/converted/giphy_OVrx3yj' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py", line 41, in upload_file
+    return redirect(instance.converted)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\shortcuts.py", line 154, in resolve_url
+    if '/' not in to and '.' not in to:
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\files\base.py", line 78, in __iter__
+    for chunk in self.chunks():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\files\base.py", line 55, in chunks
+    self.seek(0)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\files\utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\db\models\fields\files.py", line 43, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\files\storage.py", line 36, in open
+    return self._open(name, mode)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\files\storage.py", line 224, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\user\\Desktop\\skynet\\MillenniumFilecon\\media\\upload\\converted\\giphy_OVrx3yj'
+"POST /upload/ HTTP/1.1" 500 113854
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py previous mtime: None, current mtime: 1554318477.5660162
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py notified as changed. Signal results: [(<function translation_file_changed at 0x03D27AE0>, None)].
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.007) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'upload' AND "django_content_type"."model" = 'uploadfilemodel'); args=('upload', 'uploadfilemodel')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'upload'; args=('upload',)
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /upload/ HTTP/1.1" 200 367
+(0.009) INSERT INTO "upload_uploadfilemodel" ("title", "file", "converted") VALUES ('', 'upload/origin/giphy_ZvTDKAe.gif', ''); args=['', 'upload/origin/giphy_ZvTDKAe.gif', '']
+Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py", line 41, in upload_file
+    return redirect(instance.converted)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'C:/Users/user/Desktop/skynet/MillenniumFilecon/media/upload/converted/giphy_ZvTDKAe.mp4' not found. 'C:/Users/user/Desktop/skynet/MillenniumFilecon/media/upload/converted/giphy_ZvTDKAe.mp4' is not a valid view function or pattern name.
+"POST /upload/ HTTP/1.1" 500 87310
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\models.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\models.py previous mtime: None, current mtime: 1554318600.7738297
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\models.py notified as changed. Signal results: [(<function translation_file_changed at 0x03A86A08>, None)].
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\models.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py. is_changed: False, is_new: True
+File C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py previous mtime: None, current mtime: 1554318700.7867432
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py notified as changed. Signal results: [(<function translation_file_changed at 0x04996AE0>, None)].
+C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\admin\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\auth\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\contenttypes\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\sessions\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\messages\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\django\contrib\staticfiles\locale with glob **/*.mo.
+Watching dir C:\Users\user\AppData\Local\Programs\Python\Python37-32\lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\user\Desktop\skynet\MillenniumFilecon\upload\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
