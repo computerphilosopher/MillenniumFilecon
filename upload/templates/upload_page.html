@@ -1,9 +1,20 @@
 <html>
 
+<h1> gif를 업로드 하세요 </h2>
  <form method="post" enctype="multipart/form-data" novalidate>
     {% csrf_token %}
     {{ form.as_p}}
     <button type="submit">Upload</button>
   </form>
 
-  </html>
+<br><br>
+<h1> 여기에 비디오가 표시됩니다. </h1>
+<video width='400' controls>
+<source src='{{ video_path }}' type='video/mp4'>
+Your browser does not support the video tag.
+</video>
+<br><br>
+</p>
+
+</body>
+</html>

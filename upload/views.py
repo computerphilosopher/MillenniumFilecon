@@ -11,8 +11,9 @@ import moviepy.editor as mp
 # Create your views here.
     
 
-def download_video(request):
-    return render(request, 'download_page.html')
+def download_video(video_path, request):
+    src = {'video_path':video_path}
+    return render(request, 'download_page.html', src)
 
 def convert(instance):
 
@@ -35,16 +36,15 @@ def convert(instance):
     return settings.MEDIA_URL + "upload/converted/" + video_name
 
 
-
-
-
 def upload_file(request):
+
     if request.method == 'POST':
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             instance = form.save()
-            uri = convert(instance)
-            return redirect(uri)
+            video_path = convert(instance)
+            #return redirect(video_path, download_video)
+            return render(request, 'upload_page.html', {'form': form, 'video_path':video_path})
     else:
         form = UploadFileForm()
     return render(request, 'upload_page.html', {'form': form})
