@@ -8,8 +8,8 @@ http://computerphilosopher.pythonanywhere.com/
 
 # 사용한 프레임워크, 라이브러리 
 
-django 
-moviepy
+* django 
+* moviepy 
 
 # 라이센스
 
