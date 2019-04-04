@@ -1,5 +1,7 @@
 # MillenniumFilecon
 
+![Screenshot](capture.jpg)
+
 gif를 mp4로 간편하게 변환할 수 있는 서비스입니다
 
 http://computerphilosopher.pythonanywhere.com/
