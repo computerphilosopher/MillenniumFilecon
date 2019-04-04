@@ -5,8 +5,8 @@ from django.shortcuts import render
 from django.conf import settings
 from upload.models import UploadFileModel
 from upload.forms import UploadFileForm
+from django.http import FileResponse
 import moviepy.editor as mp
-import ffmpy
 
 # Create your views here.
     
@@ -18,17 +18,21 @@ def convert(instance):
 
     root = settings.MEDIA_ROOT 
     
-    file_url = root + '/upload/origin/' + instance.file.url.split('/')[-1]
-    file_url = file_url.replace('\\', '/')
+    file_path = root + '/upload/origin/' + instance.file.url.split('/')[-1]
+    file_path = file_path.replace('\\', '/')
     
-    video_name = file_url[:-4]
-    video_name = video_name.replace("origin", "converted")
+    video_path = file_path[:-4] + ".mp4"
+    video_path = video_path.replace("origin", "converted")
 
-    clip = mp.VideoFileClip(file_url)
+    clip = mp.VideoFileClip(file_path)
 
-    clip.write_videofile(video_name +".mp4", fps = 15)
+    clip.write_videofile(video_path)
 
-    instance.converted = video_name +".mp4"
+    instance.converted = video_path
+    instance.converted_url = settings.MEDIA_URL 
+    print(instance.converted_url)
+
+
 
 
 
@@ -37,8 +41,8 @@ def upload_file(request):
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
             instance = form.save()
-            convert(instance)
-            return redirect(instance.converted)
+            #return convert(instance)
+            return redirect(instance.converted_url)
     else:
         form = UploadFileForm()
     return render(request, 'upload_page.html', {'form': form})
